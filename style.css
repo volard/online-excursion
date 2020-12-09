@@ -150,7 +150,6 @@ body {
     width: 70px;
     height: 70px;
     transform: translate(-50%, -50%);
-    transition: ease 5s all;
     position: absolute;
     cursor: pointer;
 }
