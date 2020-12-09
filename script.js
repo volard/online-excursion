@@ -1,7 +1,7 @@
 var galleryContent = "";
 for (var i = 1; i <= 23; i++) {
     galleryContent = galleryContent +
-        "<div index = '" + i + "' class='gallery-item' style=\"background-image: url(/scenes/optimised/" + i + ".jpg);\"></div>";
+        "<div index = '" + i + "' class='gallery-item' style=\"background-image: url(scenes/optimised/" + i + ".jpg);\"></div>";
 }
 var galleryElement = document.getElementById('gallery');
 galleryElement.insertAdjacentHTML('afterBegin', galleryContent);
@@ -263,7 +263,7 @@ document.onclick = function(event) {
     } else if (event.target.parentNode.hasAttribute('goto')) {
         var goto = event.target.parentNode.getAttribute('goto');
     } else { return; }
-    mainImage.setAttribute('style', 'background-image: url("/scenes/' + goto + '.jpg");');
+    mainImage.setAttribute('style', 'background-image: url("scenes/' + goto + '.jpg");');
     deleteLabels();
     setOnLabelsPlace(goto);
 }
